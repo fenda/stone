@@ -1,1 +1,32 @@
 .wrapper {max-width:$wrapper-width; width:100%; margin:0 auto;}
+section {padding:45px 0;}
+
+//become a client
+.client-contacts {float:left; width:190px;
+	&__item {padding:20px 0 25px 45px; background-repeat:no-repeat; background-position:0 45%;
+		&--smile {background-image:url(../images/icon-smile.png);}
+		&--heart {background-image:url(../images/icon-heart.png);}
+		&--chat {background-image:url(../images/icon-chat.png);}
+		&--plus {background-image:url(../images/icon-plus.png);}
+	}
+	&__subtitle, &__title {color:#7d7d7d; font-weight:400; text-transform:uppercase; margin:0; line-height:1; transition:.5s;}
+	&__subtitle { font-size:12px; margin-bottom:3px;}
+	&__title {font-size:18px;}
+	&__undertitle {font-size:11px; margin:0; color:#7d7d7d; font-weight:400;}
+	&__text {font-size:11px; color:$primary-color; margin:6px 0 0;}
+	&__link {
+		&:hover {text-decoration:none;
+			h1, h2 {color:$primary-color; }
+		}
+	}
+}
+
+.client-callout {position:relative; float:right; width:calc(100% - 225px);
+	&__caption {position:absolute; top:23%; right:75px; color:#FFF; text-shadow: 0 0 10px rgba(35, 31, 32, 0.75);}
+	&__title {font-size:41px; line-height:1.1; margin-bottom:20px;}
+	&__description {font-size:17px; width:350px;}
+	&__button {position:relative; float:right; width:490px; height:105px; background: url(../images/become-a-client-button.png) no-repeat $primary-color; color:#FFF; padding:20px 100px 20px 30px; font-size:35px; font-weight:700;margin:0; line-height:1.2; cursor:pointer; margin:-65px 45px 0 0;
+		span {display:block; font-size:14px; font-weight:400;}
+		&:hover {text-decoration:none; background-color:$hover-color;}
+	}
+}
