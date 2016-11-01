@@ -1,0 +1,19 @@
+*, *:after, *:before {box-sizing: border-box; -webkit-font-smoothing: subpixel-antialiased;}
+
+html {font-size: 62.5%; -webkit-tap-highlight-color: rgba(0,0,0,0);}
+
+body {font-family:$font-family-base; font-size:$font-size-base; line-height:$line-height-base; color:$text-color; margin:0; font-weight:400;}
+img {max-width: 100%; vertical-align:middle; height:auto;}
+a {color: $text-color; text-decoration: none; transition:.5s;
+  &:focus, &:hover {text-decoration:underline;}
+}
+input[type="text"], input[type="search"] {font-size:inherit; line-height:inherit;}
+
+::selection {background-color: $selection-bg; color:$body-bg; text-shadow: none;}
+
+.clear {
+	&:before, &:after {content: " "; display:table;}
+	&:after {clear:both;}
+}
+
+.reset-box {@include reset-box;}
