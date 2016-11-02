@@ -68,18 +68,23 @@ section {padding:45px 0 20px;}
 }
 
 //clients
-.clients {
-	&__slider {float:left; width:50%;}
-	&__videos {float:right; width:50%; position:relative; padding:0 40px;}
-	&__hastag {float:right; width:50%;}
+.clients {padding-bottom:70px;
+	&__slider {float:left; width:50%;
+		.owl-dots {width:calc(100% - 400px); float:left; text-align:center; margin-top:-30px; position:relative; z-index:9;}
+		.owl-dot {background:#c6c6c6; width:19px; height:19px; display:inline-block; margin:0 10px; border-radius:10px;
+			&.active {background:$primary-color;}
+		}
+	}
+	&__videos {float:right; width:50%; position:relative; padding:0 40px; margin-bottom:60px;}
+	&__hashtag {float:right; width:50%; padding-right:60px; clear:right;}
 }
 
 .slide {
-	&__image {width:calc(100% - 170px) !important; float:left;}
-	&__author {float:right; font-size:15px; width:150px;
+	&__image {width:calc(100% - 170px) !important; float:left; margin-bottom:60px;}
+	&__author {float:right; font-size:15px; width:150px; margin-top:230px;
 		span {font-weight:700; display:block;}
 	}
-	&__testimonial {background:$primary-color; color:#FFF; position:absolute; width:380px; bottom:0; right:0; font-size:25px; padding:20px 30px; line-height:1.2;}
+	&__testimonial {background:$primary-color; color:#FFF; position:absolute; width:380px; bottom:0; right:0; font-size:25px; padding:20px 30px; line-height:1.2; margin:0;}
 }
 
 .greenstripe {background:$primary-color; width:100%; height:100px; display:block; position:absolute; z-index:-1; top:30px; left:0;}
@@ -87,6 +92,9 @@ section {padding:45px 0 20px;}
 	&__thumbnail {width:100%; margin-bottom:10px;}
 	&__description {color:#2e2e2e; font-weight:400;}
 	&__button {font-size:16px; background:$primary-color; color:#FFF; padding:20px; line-height:1; display:inline-block; margin-top:20px;}
+}
+.hashtag {float:right; border:2px solid #c6c6c6; width:350px; color:#2e2e2e; font-size:43px; padding:30px 50px; line-height:1; margin:0;
+	&__description {float:left; width:calc(100% - 370px); padding-left:60px;}
 }
 
 // contact

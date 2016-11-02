@@ -1,1 +1,1 @@
-$(document).ready(function(){$(".clients__slider").length&&$(".clients__slider").owlCarousel({loop:!0,dots:!0,items:1})});
+$(document).ready(function(){$(".clients__slider").length&&$(".clients__slider").owlCarousel({loop:!0,dots:!0,items:1,nav:!1})});

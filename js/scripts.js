@@ -3,7 +3,8 @@ $(document).ready(function(){
 		$('.clients__slider').owlCarousel({
 			loop:true,
 			dots:true,
-			items: 1
+			items: 1,
+			nav: false
 		});
 	}
 });
